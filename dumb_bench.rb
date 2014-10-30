@@ -38,6 +38,7 @@ def test
   a = Time.now
   n_proc = get_nproc
   count = $times/n_proc
+  puts "COUNT #{count}"
   arr = []
   n_proc.times do
     arr << thread_function(count)
